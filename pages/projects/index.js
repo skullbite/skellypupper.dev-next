@@ -3,7 +3,7 @@ import { Tooltip } from '@nextui-org/react'
 
 export default () => <>
     <Head>
-        <title>Home</title>
+        <title>Projects</title>
         <link rel="icon" href="/favicon.ico" />
     </Head>
     <body className="theme-pink">
