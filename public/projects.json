@@ -1,0 +1,64 @@
+[
+    {
+        "name": "This Website",
+        "dead": false,
+        "description": "4th wall break",
+        "langAsset": "filetype-js",
+        "image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/282/globe-with-meridians_1f310.png",
+        "color": "website",
+        "github": "https://github.com/Skullbite/skellypupper.dev-next"
+    },
+    {
+        "name": "Plugins",
+        "dead": false,
+        "description": "Plugins I worked on for discord client mods.",
+        "langAsset": "filetype-js",
+        "image": "https://avatars.githubusercontent.com/u/97651151?s=200&v=4",
+        "color": "blurple",
+        "github": "https://github.com/skullyplugs"
+    },
+    {
+        "name": "Petals",
+        "dead": true,
+        "description": "Dumb Discord API Wrapper",
+        "deathReason": "Started at a point where discord was making extensive changes, couldn't keep up.",
+        "langAsset": "filetype-js",
+        "image": "petals.png",
+        "color": "hibiscus",
+        "github": "https://github.com/Skullbite/petals"
+    },
+    {
+        "name": "Spooderfy",
+        "dead": true,
+        "description": "Spotify information discord bot.",
+        "deathReason": "Dropped due to hosting issues.",
+        "langAsset": "filetype-py",
+        "image": "spooderfy.png",
+        "github":"https://github.com/Skullbite/spotify"
+    },
+    {
+        "name": "Hibiscus",
+        "dead": true,
+        "description": "Near advanced command handler for Eris.",
+        "deathReason": "Dropped in favor of petals.",
+        "langAsset": "filetype-js",
+        "image": "hibooscus.png"
+    },
+    {
+        "name": "Yoshi",
+        "dead": true,
+        "description": "Pokemon and amiibo information discord bot.",
+        "deathReason": "Dropped due to hosting issues and a lack of interest after Discord API changes.",
+        "langAsset": "filetype-js",
+        "image": "yoshi.png"
+    },
+    {
+        "name": "owopup",
+        "dead": true,
+        "description": "Multipurpose furry discord bot.",
+        "deathReason": "Dropped due to it's PYPI package being depricated.",
+        "langAsset": "filetype-py",
+        "image": "owopup.png",
+        "github": "https://github.com/Skullbite/owopup-v3"
+    }
+]

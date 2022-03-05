@@ -1,0 +1,170 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+}
+.center-object {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: right;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 98%
+}
+
+div#projects.center-object {
+    height: fit-content;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.info-box img {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 40px;
+    max-width: 130px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 0.99%;
+}
+
+.info-box {
+    padding: 6px 10px 6px 10px;
+    border: 5px var(--top) solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info-box img {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 40px;
+    max-width: 130px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 0.5%;
+}
+
+/*.info-box img.crop {
+    width: 512;
+    height: 512;
+    object-fit: cover;
+}*/
+
+.info-box .info-text {
+    float: right;
+    text-align: left;
+    display: inline;
+    word-wrap: break-word;
+    margin-top: -1.9%;
+}
+
+.info-box .info-text a:hover {
+    color:var(--text-hover);
+
+}
+
+.bi {
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: 6px;
+    transition: 1s;
+}
+
+.bi:hover:not(.project-lang) {
+    color: var(--hover) !important;
+    transition: 1s;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    transition: 1s;
+    letter-spacing: 0px;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#projects {
+    height: fit-content;
+}
+
+
+#cutiebutton:hover {
+    cursor: pointer;
+}
+
+#badge {
+    margin-left: 1%;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--dead);
+}
+
+.theme-pink {
+    --bg: rgb(34, 16, 26);
+    --top: #55293d;
+    --hover: #874572;
+}
+.theme-green {
+    --bg: rgb(16, 34, 18);
+    --top: #2d5529;
+    --hover: #478745;
+}
+.theme-gold {
+    --bg: rgb(34, 32, 16);
+    --top: #554d29;
+    --hover: #878145;
+}
+.theme-purple {
+    --bg: rgb(23, 16, 34);
+    --top: #3b2955;
+    --hover: #644587;
+}
+.theme-blue {
+    --bg: rgb(16, 24, 34);
+    --top: #293c55;
+    --hover: #456287;
+}
+.theme-gray {
+    --bg: rgb(34, 34, 34);
+    --top: #5a5a5a;
+    --hover: #8e8e8e;
+}
+:root {
+    --text: rgb(204, 204, 204);
+    --hover-text: rgb(156, 156, 156);
+    --dead: rgb(117, 117, 117);
+    --owopup: #3b851e;
+    --yoshi: #f16d7c;
+    --spooderfy: #1ed760;
+    --hibiscus: #f496c0;
+    --blurple: #5865f2;
+    --website: #3889c4;
+}
+
+@media (orientation: portrait) {
+    .info-box img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .info-box .info-text {
+        text-align: center;
+    }
+}
