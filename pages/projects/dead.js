@@ -9,6 +9,10 @@ export async function getServerSideProps() {
 export default ({ aliveProjects }) => <>
     <Head>
         <title>Dead Projects</title>
+        <meta property="og:title" content="Dead Projects" />
+        <meta name="theme-color" content="#8e8e8e" />
+        <meta property="og:site_name" content="skellypupper.dev" />
+        <meta property="og:description" content="Here lies stuff I don't work on." />
     </Head>
     <body className="theme-gray">
         <div className="center-object" id="projects">

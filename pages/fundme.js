@@ -4,6 +4,10 @@ import { Tooltip } from '@nextui-org/react'
 export default () => <>
     <Head>
         <title>gib money</title>
+        <meta property="og:title" content="gimme money" />
+        <meta name="theme-color" content="#478745" />
+        <meta property="og:site_name" content="skellypupper.dev" />
+        <meta property="og:description" content="pls i need it" />
     </Head>
     <body className="theme-green">
         <div className="center-object">
@@ -11,7 +15,7 @@ export default () => <>
                 <div className="info-text">
                     <h3>stuff ain't cheap :P</h3>
                     <p>Coding doesn't make me money yet, so i'd appriciate anything you could give me</p>
-                    <div className="buttons" style={{ display: "flex" }}>
+                    <div className="buttons">
                         <Tooltip color="invert" content='PayPal'>
                             <a className="bi bi-paypal" href="https://paypal.me/skellypupper" />
                         </Tooltip>

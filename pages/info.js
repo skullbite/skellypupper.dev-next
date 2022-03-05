@@ -3,7 +3,10 @@ import Head from 'next/head'
 export default () => <>
     <Head>
         <title>More about me</title>
-        <style></style>
+        <meta property="og:title" content="Dev Info" />
+        <meta name="theme-color" content="#878145" />
+        <meta property="og:site_name" content="skellypupper.dev" />
+        <meta property="og:description" content="FAQ????" />
     </Head>
     <body className="theme-gold">
         <div className="center-object">

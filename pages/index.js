@@ -4,6 +4,7 @@ import { Tooltip } from '@nextui-org/react'
 export async function getServerSideProps() {
   const res = await fetch(`https://discord.com/api/users/${process.env.USER_ID}`, { method: "GET", headers: { Authorization: `Bot ${process.env.BOT_TOKEN}` } })
   const data = await res.json()
+  // TODO: non-discord fallback
   return { props: {
     pfp: `https://images.discordapp.net/avatars/${process.env.USER_ID}/${data.avatar}.png?size=512`
   } }
@@ -12,8 +13,13 @@ export async function getServerSideProps() {
 export default ({ pfp }) => 
     <>
     <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="hi" />
+        <meta name="theme-color" content="#456287" />
+        <meta property="og:site_name" content="skellypupper.dev" />
+        <meta property="og:description" content="Look at my cool website." />
+        <meta property="og:image" content={ pfp } />
     </Head>
     <body className="theme-blue">
         <div className="center-object">
