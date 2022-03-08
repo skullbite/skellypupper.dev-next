@@ -5,7 +5,6 @@ export default () => <>
     <Head>
         <title>Projects</title>
         <link rel="icon" href="/favicon.ico" />
-        
     </Head>
     <body className="theme-pink">
         <div className="center-object"><meta property="og:title" content="Projects" />

@@ -2,12 +2,19 @@ import Head from 'next/head'
 import { Tooltip } from '@nextui-org/react'
 
 export async function getServerSideProps() {
-  const res = await fetch(`https://discord.com/api/users/${process.env.USER_ID}`, { method: "GET", headers: { Authorization: `Bot ${process.env.BOT_TOKEN}` } })
-  const data = await res.json()
-  // TODO: non-discord fallback
-  return { props: {
-    pfp: `https://images.discordapp.net/avatars/${process.env.USER_ID}/${data.avatar}.png?size=512`
-  } }
+    try {
+        const res = await fetch(`https://discord.com/api/users/${process.env.USER_ID}`, { method: "GET", headers: { Authorization: `Bot ${process.env.BOT_TOKEN}` } })
+        const data = await res.json()
+        // Discord had an outage the day this was commited
+        return { props: {
+            pfp: `https://images.discordapp.net/avatars/${process.env.USER_ID}/${data.avatar}.png?size=512`
+        } }
+    }
+    catch {
+        return { props: {
+            pfp: "/assets/fallback.png"
+        } }
+    }
 }
 
 export default ({ pfp }) => 
