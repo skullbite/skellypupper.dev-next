@@ -1,4 +1,4 @@
-import { Tooltip } from '@nextui-org/react'
+import LinkIcon from './LinkIcon'
 
 export default ({ name, github, dead, description, color, image, langAsset, deathReason }) => <div className="info-box" style={ !dead ? { borderColor: `var(--${color})` } : {} }>
     <img src={ image.includes(`://`) ? image : `/assets/${image}` } style={ dead ? { filter: "grayscale(1)" } : {} } />
@@ -8,10 +8,11 @@ export default ({ name, github, dead, description, color, image, langAsset, deat
         <p style={{ color: "#dc4646" }}>{ deathReason }</p>
         { github ? 
         <div className="buttons">
-            <Tooltip color="invert" content="View Source Code">
-                <a className="bi bi-github" href={ github } />
-            </Tooltip>
-            
+            <LinkIcon
+            tooltipText="View Source Code"
+            iconClass="bi bi-github"
+            href={ github }
+            />
         </div> : <></>
         }
     </div>

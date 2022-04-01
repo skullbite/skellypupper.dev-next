@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Tooltip } from '@nextui-org/react'
+import LinkIcon from '../components/LinkIcon'
 
 export async function getServerSideProps() {
     try {
@@ -36,27 +36,41 @@ export default ({ pfp }) =>
                     <h3>hi, i'm skullbite.</h3>
                     <p>Freetime fullstack dev. <br/> Somewhat fluent with python and typescript.</p>
                     <div className="buttons">
-                        <Tooltip content="Dev Information" color="invert">
-                            <a className="bi bi-info-square-fill" href="/info" />
-                        </Tooltip>
-                        <Tooltip content="Discord" color="invert">
-                            <a className="bi bi-discord" href="https://discord.gg/aUWRnWQsC9" />
-                        </Tooltip>
-                        <Tooltip content="Twitter" color="invert">
-                            <a className="bi bi-twitter" href="https://twitter.com/skellypupper" />
-                        </Tooltip>
-                        <Tooltip content="Instagram" color="invert">
-                            <a className="bi bi-instagram" href="https://www.instagram.com/idiot.cowboy/" />
-                        </Tooltip>
-                        <Tooltip content="Github" color="invert">
-                            <a className="bi bi-github" href="https://github.com/skullbite" />
-                        </Tooltip>
-                        <Tooltip content="Donations" color="invert">
-                            <a className="bi bi-cash" href="/fundme" />
-                        </Tooltip>
-                        <Tooltip content="Projects" color="invert">
-                            <a className="bi bi-code-square" href="/projects" />
-                        </Tooltip>
+                        <LinkIcon
+                        tooltipText="Dev Information"
+                        iconClass="bi bi-info-square-fill"
+                        href="/info"
+                        />
+                        <LinkIcon
+                        tooltipText="Discord: Skullbite#3621"
+                        iconClass="bi bi-discord"
+                        href="https://discord.gg/aUWRnWQsC9"
+                        />
+                        <LinkIcon
+                        tooltipText="Twitter: @skellypupper"
+                        iconClass="bi bi-twitter"
+                        href="https://twitter.com/skellypupper"
+                        />
+                        <LinkIcon
+                        tooltipText="Instagram: @idiot.cowboy"
+                        iconClass="bi bi-instagram"
+                        href="https://www.instagram.com/idiot.cowboy/"
+                        />
+                        <LinkIcon
+                        tooltipText="Github: skullbite"
+                        iconClass="bi bi-github"
+                        href="https://github.com/skullbite"
+                        />
+                        <LinkIcon
+                        tooltipText="Donations"
+                        iconClass="bi bi-cash"
+                        href="/fundme"
+                        />
+                        <LinkIcon
+                        tooltipText="Projects"
+                        iconClass="bi bi-code-square"
+                        href="/projects"
+                        />
                     </div>
                 </div>
             </div>

@@ -3,10 +3,10 @@ import projects from '../../public/projects.json'
 import ProjectBox from '../../components/ProjectBox'
 
 export async function getServerSideProps() {
-    return { props: { aliveProjects: projects.filter(project => project.dead) } }
+    return { props: { deadProjects: projects.filter(project => project.dead) } }
 }
 
-export default ({ aliveProjects }) => <>
+export default ({ deadProjects }) => <>
     <Head>
         <title>Dead Projects</title>
         <meta property="og:title" content="Dead Projects" />
@@ -16,7 +16,7 @@ export default ({ aliveProjects }) => <>
     </Head>
     <body className="theme-gray">
         <div className="center-object" id="projects">
-            { aliveProjects.map(p => <ProjectBox 
+            { deadProjects.map(p => <ProjectBox 
             name={p.name} 
             github={p.github} 
             dead={p.dead} 

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Tooltip } from '@nextui-org/react'
+import LinkIcon from '../../components/LinkIcon'
 
 export default () => <>
     <Head>
@@ -17,9 +17,11 @@ export default () => <>
                     <h3>Active Projects</h3>
                     <p>Stuff I'm doing.</p>
                     <div className="buttons">
-                        <Tooltip content="View Projects" color='invert'>
-                            <a className="bi bi-eye-fill" href="/projects/active" />
-                        </Tooltip>
+                        <LinkIcon
+                        tooltipText="View Projects"
+                        iconClass="bi bi-eye-fill"
+                        href="/projects/active"
+                        />
                     </div>
                 </div>
             </div>
@@ -29,9 +31,11 @@ export default () => <>
                     <h3>Dead Projects</h3>
                     <p>Here lies all the projects I don't work on anymore.</p>
                     <div className="buttons">
-                        <Tooltip content="View Projects" color='invert'>
-                            <a className="bi bi-eye-fill" href="/projects/dead" />
-                        </Tooltip>
+                        <LinkIcon
+                        tooltipText="View Projects"
+                        iconClass="bi bi-eye-fill"
+                        href="/projects/dead"
+                        />
                     </div>
                 </div>
             </div>

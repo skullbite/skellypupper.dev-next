@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Tooltip } from '@nextui-org/react'
+import LinkIcon from '../components/LinkIcon'
 
 export default () => <>
     <Head>
@@ -16,21 +16,31 @@ export default () => <>
                     <h3>stuff ain't cheap :P</h3>
                     <p>Coding doesn't make me money yet, so i'd appriciate anything you could give me</p>
                     <div className="buttons">
-                        <Tooltip color="invert" content='PayPal'>
-                            <a className="bi bi-paypal" href="https://paypal.me/skellypupper" />
-                        </Tooltip>
-                        <Tooltip color="invert" content="Github Sponsors">
-                            <a className="bi bi-suit-heart-fill" href="https://github.com/sponsors/Skullbite" />
-                        </Tooltip>
-                        <Tooltip color="invert" content="Kofi">
-                            <a className="bi bi-cup-fill" href="https://ko-fi.com/skullbite" />
-                        </Tooltip>
-                        <Tooltip color="invert" content="Cash App">
-                            <a className="bi bi-currency-dollar" href="https://cash.app/$skullyss" />
-                        </Tooltip>
-                        <Tooltip color="invert" content="Home">
-                            <a className="bi bi-house" href="/" />
-                        </Tooltip>
+                        <LinkIcon
+                        tooltipText="Paypal"
+                        iconClass="bi bi-paypal"
+                        href="https://paypal.me/skellypupper"
+                        />
+                        <LinkIcon
+                        tooltipText="Github Sponsors"
+                        iconClass="bi bi-suit-heart-fill"
+                        href="https://github.com/sponsors/Skullbite"
+                        />
+                        <LinkIcon
+                        tooltipText="Kofi"
+                        iconClass="bi bi-cup-fill"
+                        href="https://ko-fi.com/skullbite"
+                        />
+                        <LinkIcon
+                        tooltipText="Cash App"
+                        iconClass="bi bi-currency-dollar"
+                        href="https://cash.app/$skullyss"
+                        />
+                        <LinkIcon
+                        tooltipText="Home"
+                        iconClass="bi bi-house"
+                        href="/"
+                        />
                     </div>
                 </div>
             </div>

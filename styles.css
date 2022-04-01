@@ -19,6 +19,7 @@
 
 div#projects.center-object {
     height: fit-content;
+    padding-bottom: 10px;
 }
 
 body {
@@ -101,7 +102,6 @@ button {
     height: fit-content;
 }
 
-
 #cutiebutton:hover {
     cursor: pointer;
 }
@@ -158,6 +158,9 @@ button {
 }
 
 @media (orientation: portrait) {
+    .center-object {
+        width: 91%;
+    }
     .info-box img {
         display: block;
         margin-left: auto;
