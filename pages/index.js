@@ -47,11 +47,6 @@ export default ({ pfp }) =>
                         href="https://discord.gg/aUWRnWQsC9"
                         />
                         <LinkIcon
-                        tooltipText="Twitter: @skellypupper"
-                        iconClass="bi bi-twitter"
-                        href="https://twitter.com/skellypupper"
-                        />
-                        <LinkIcon
                         tooltipText="Instagram: @idiot.cowboy"
                         iconClass="bi bi-instagram"
                         href="https://www.instagram.com/idiot.cowboy/"
