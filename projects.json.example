@@ -1,0 +1,10 @@
+[{
+    "name": "Cool project name",
+    "dead": false,
+    "langAsset": "filetype-js", // just any bootstrap icon: https://icons.getbootstrap.com/
+    "description": "Cool project description",
+    "image": "cool image url",
+    "color": "cool css root value",
+    "github": "gh link",
+    "put this in": "the public folder"
+}]

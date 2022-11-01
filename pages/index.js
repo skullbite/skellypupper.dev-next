@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import LinkIcon from '../components/LinkIcon'
 
+const curDate = new Date();
+
 export async function getServerSideProps() {
     try {
         const res = await fetch(`https://discord.com/api/users/${process.env.USER_ID}`, { method: "GET", headers: { Authorization: `Bot ${process.env.BOT_TOKEN}` } })
@@ -34,7 +36,7 @@ export default ({ pfp }) =>
                 <img draggable="false" src={ pfp } alt="Discord profile picture" />
                 <div className="info-text">
                     <h3>hi, i'm skullbite.</h3>
-                    <p>Freetime fullstack dev. <br/> Somewhat fluent with python and typescript.</p>
+                    <p>Freetime fullstack dev. <br/> Somewhat fluent with python and typescript. <br/> { curDate.getDate() === 31 && curDate.getMonth() === 9 ? "also today is my birthday wooo 🎉" : null } </p>
                     <div className="buttons">
                         <LinkIcon
                         tooltipText="Dev Information"
